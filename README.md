@@ -23,6 +23,12 @@ Comparing with the state-of-the-art methods, our WBFlow has a stable and superio
 </p>
 We propose the Reversible Non-linear Rendering Transformation and Reversible Linear Correction Transformation to ensure the reversibility of WBFlow, which significantly improves the floor of WB accuracy for multiple cameras. The Camera Transformation is then applied in the pseudo-raw space to generalize WBFlow to multiple cameras via few-shot learning.
 
+# Rendered Multi-camera sRGB Dataset
+We collected a multi-camera sRGB dataset to evaluate the multi-camera generalization effect. Specifically, we selected and compiled 184 groups of raw images from the NUS dataset. In each group, the raw images are consistent in the scenes and differ in the cameras: Canon1DsMkIII, Canon600D, FujifilmXM1, NikonD5200, OlympusEPL6, PanasonicGX1, SamsungNX2000, and SonyA57. To obtain the color-cast sRGB versions of these images, we use the Adobe Camera Raw in Photoshop to render them with five common color temperatures (2850 K, 3800 K, 5500 K, 6500 K, and 7500 K) and camera standard photo finishing. We obtain the corresponding GTs by manually selecting the correct color temperature from the middle gray patches in the color checker of each raw image. The rest of the operations remain unchanged. In total, our multi-camera sRGB dataset contains 7360 sRGB images with 184 scenes, five color temperatures, and eight cameras.
+
+## Dataset is available:   [Data](https://drive.google.com/drive/folders/1eX_hHxeMI6sKJu3De6P9Lunnz0i8P8aF?usp=sharing)
+The folds are coming soon...
+
 # Experiment
 ## Requirements
 * Python 3.8.3
