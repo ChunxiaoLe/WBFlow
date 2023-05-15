@@ -2,13 +2,19 @@
 * Authors: Chunxiao Li, Xuejing Kang, Anlong Ming*
 * Affiliation: School of Computer Science (National Pilot Software Engineering School), Beijing University of Posts and Telecommunications
 
-This paper is proposed to not only perform superior white balance for sRGB images but also generalizes to multiple cameras well.. [paper link](https://github.com/ChunxiaoLe/SWBNet/blob/master/paper/9786.ChunxiaoLi.pdf)
+This paper is proposed to build a model that not only performs superior white balance for sRGB images but also generalizes to multiple cameras well.. [paper link](https://github.com/ChunxiaoLe/WBFlow/blob/main/1152.ChunxiaoLi.pdf)
 
 # Results presentation
 <p align="center">
-  <img src="https://github.com/ChunxiaoLe/SWBNet/blob/master/example_images/figure1.png" alt="WB stability visualization" width="89%">
+  <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/vis22.png" alt="Visualization 1 of cross-camera WB for sRGB images" width="89%">
 </p>
-Comparing with the state-of-the-art methods, our SWBNet has a stable and superior performance for the sRGB images with different color temperatures. 
+<p align="center">
+  <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/vis33.png" alt="Visualization 2 of cross-camera WB for sRGB images" width="89%">
+</p>
+<p align="center">
+  <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/vis44.png" alt="Visualization 3 of cross-camera WB for sRGB images" width="89%">
+</p>
+Comparing with the state-of-the-art methods, our WBFlow has a stable and superior performance for the sRGB images from different cameras. 
 
 
 # Framework
@@ -31,7 +37,7 @@ A. The CTIF extractor and CT-contrastive loss work together to learn the color t
 * scikit-learn
 
 ## Testing
-* Pretrained models: [Net_CTIF](https://drive.google.com/file/d/1_Io3ESglojAvWGaZGW88KOfnTtPs0PAt/view?usp=sharing)
+* Pretrained models: [Net](https://drive.google.com/file/d/1_Io3ESglojAvWGaZGW88KOfnTtPs0PAt/view?usp=sharing)
 * Please download them and put them into the floder ./model/
 ### Testing single image
 * To test single image, changing '--input' in demo.sh and run it. The result is save in the folder 'result_images'.
