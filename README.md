@@ -50,7 +50,7 @@ The folds are coming soon...
 * To test single image, changing '--input' in demo.sh and run it. The result is save in the folder 'result_images'.
 ```
 demo.sh
-python demo_single_image.py --input './example_images/1127_D.JPG' --output_dir './result_images'
+python demo_single_image.py --input '**.JPG' --output_dir './result_images'
 ```
 ### Testing multiple images
 * Public datasets are available: [Rendered WB dataset (Set1, Set2, Cube)](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html)
