@@ -19,9 +19,9 @@ Comparing with the state-of-the-art methods, our WBFlow has a stable and superio
 
 # Framework
 <p align="center">
-  <img src="https://github.com/ChunxiaoLe/SWBNet/blob/master/example_images/figure4.png" alt="The framework of our SWBNet" width="90%">
+  <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/net.png" alt="Illustration of our WBFlow" width="90%">
 </p>
-A. The CTIF extractor and CT-contrastive loss work together to learn the color temperature-insensitive features for achieving stable WB performance. B. The CTS-oriented transformer corrects multiple color temperature shifts differently to improve WB accuracy, especially for the multi-illumination sRGB images.
+We propose the Reversible Non-linear Rendering Transformation and Reversible Linear Correction Transformation to ensure the reversibility of WBFlow, which significantly improves the floor of WB accuracy for multiple cameras. The Camera Transformation is then applied in the pseudo-raw space to generalize WBFlow to multiple cameras via few-shot learning.
 
 # Experiment
 ## Requirements
