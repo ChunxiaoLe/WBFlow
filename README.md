@@ -4,6 +4,15 @@
 
 This paper is proposed to build a model that not only performs superior white balance for sRGB images but also generalizes to multiple cameras well.. [paper link](https://github.com/ChunxiaoLe/WBFlow/blob/main/1152.ChunxiaoLi.pdf)
 
+
+
+# Framework
+<p align="center">
+  <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/net.png" alt="Illustration of our WBFlow" width="90%">
+</p>
+We propose the Reversible Non-linear Rendering Transformation and Reversible Linear Correction Transformation to ensure the reversibility of WBFlow, which significantly improves the floor of WB accuracy for multiple cameras. The Camera Transformation is then applied in the pseudo-raw space to generalize WBFlow to multiple cameras via few-shot learning.
+
+
 # Results presentation
 <p align="center">
   <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/vis22.png" alt="Visualization 1 of cross-camera WB for sRGB images" width="89%">
@@ -16,12 +25,6 @@ This paper is proposed to build a model that not only performs superior white ba
 </p>
 Comparing with the state-of-the-art methods, our WBFlow has a stable and superior performance for the sRGB images from different cameras. 
 
-
-# Framework
-<p align="center">
-  <img src="https://github.com/ChunxiaoLe/WBFlow/blob/main/example_images/net.png" alt="Illustration of our WBFlow" width="90%">
-</p>
-We propose the Reversible Non-linear Rendering Transformation and Reversible Linear Correction Transformation to ensure the reversibility of WBFlow, which significantly improves the floor of WB accuracy for multiple cameras. The Camera Transformation is then applied in the pseudo-raw space to generalize WBFlow to multiple cameras via few-shot learning.
 
 # Rendered Multi-camera sRGB Dataset
 ## Intro
