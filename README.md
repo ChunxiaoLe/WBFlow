@@ -47,7 +47,7 @@ The folds are coming soon...
 * scikit-learn
 
 ## Testing
-* Pretrained models: [Net](https://drive.google.com/file/d/1_Io3ESglojAvWGaZGW88KOfnTtPs0PAt/view?usp=sharing)
+* Pretrained models: [Net](https://drive.google.com/file/d/11GwBDwhrQ6D15cKXOJZ5CH2lVmLW5Uag/view)
 * Please download them and put them into the floder ./model/
 ### Testing single image
 * To test single image, changing '--input' in demo.sh and run it. The result is save in the folder 'result_images'.
